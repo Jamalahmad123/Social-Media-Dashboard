@@ -62,6 +62,7 @@ h1,
 h2,
 h3 {
   font-size: 3.5rem;
+  line-height: 1;
 }
 
 a,
@@ -122,10 +123,12 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .nav-dashboard p {
   color: var(--foreground-clr);
+  margin-bottom: 2rem;
 }
 
 .dark-mode {
@@ -266,3 +269,14 @@ section {
 .overview-card:hover {
   background-color: var(--hover-clr);
 }
+
+/* media Queri */
+/* @media screen and (max-width: 768px) {
+  .nav-dashboard {
+    display: block;
+  }
+
+  .nav-dashboard header {
+    margin-bottom: 2rem;
+  }
+} */
